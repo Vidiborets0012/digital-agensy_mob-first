@@ -22,6 +22,11 @@ body {
         padding: 0 30px;
     }
 }
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+}
 
 .header {
     background-color: $accent;
@@ -47,6 +52,12 @@ body {
 @media screen and (min-width: 640px) {
     .logo-link {
         margin-left: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo-link {
+        margin-left: 0px;
     }
 }
 
