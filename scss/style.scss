@@ -28,6 +28,20 @@ body {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
 .header {
     background-color: $accent;
     &-inner {
@@ -78,5 +92,11 @@ body {
         top: 15px;
         left: 14px;
         box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .menu-btn {
+        margin-right: 90px;
     }
 }

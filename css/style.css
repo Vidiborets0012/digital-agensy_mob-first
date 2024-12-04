@@ -25,6 +25,18 @@ body {
     padding: 0 40px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
 .header {
   background-color: #2b4074;
 }
@@ -72,4 +84,10 @@ body {
   top: 15px;
   left: 14px;
   box-shadow: 0 4px 0 0 #2b4074, 0 8px 0 0 #2b4074;
+}
+
+@media screen and (min-width: 1440px) {
+  .menu-btn {
+    margin-right: 90px;
+  }
 }/*# sourceMappingURL=style.css.map */
