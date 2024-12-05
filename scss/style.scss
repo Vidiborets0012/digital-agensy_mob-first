@@ -294,3 +294,26 @@ body {
     }
 
 }
+
+@media screen and (min-width: 1440px) {
+    .hero-slider {
+        &-item {
+            min-height: 668px;
+        }
+
+        &-title {
+            padding-top: 107px;
+            font-size: 96px;
+            line-height: 96px;
+            letter-spacing: 2px;
+            max-width: 865px;
+        }
+
+        &-text {
+            font-size: 24px;
+            line-height: 26px;
+            min-width: 886px;
+        }
+    }
+
+}

@@ -305,4 +305,21 @@ body {
   .hero-slider .slick-dots {
     bottom: 80px;
   }
+}
+@media screen and (min-width: 1440px) {
+  .hero-slider-item {
+    min-height: 668px;
+  }
+  .hero-slider-title {
+    padding-top: 107px;
+    font-size: 96px;
+    line-height: 96px;
+    letter-spacing: 2px;
+    max-width: 865px;
+  }
+  .hero-slider-text {
+    font-size: 24px;
+    line-height: 26px;
+    min-width: 886px;
+  }
 }/*# sourceMappingURL=style.css.map */
