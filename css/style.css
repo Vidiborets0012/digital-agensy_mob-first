@@ -48,7 +48,7 @@ html {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -154,7 +154,7 @@ body {
 .hero {
   background-image: url("../images/bg-hero.jpg");
   background-repeat: no-repeat;
-  background-position: -64px center;
+  background-position: center center;
   background-size: cover;
   min-height: 193px;
 }
@@ -162,7 +162,11 @@ body {
 @media screen and (min-width: 640px) {
   .hero {
     min-height: 386px;
-    background-position: -162px center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    min-height: 465px;
   }
 }
 .hero-slider {
@@ -194,6 +198,9 @@ body {
   width: 61px;
   background-color: #4a4a4a;
   margin: 0 auto;
+}
+.hero-slider-text {
+  display: none;
 }
 .hero-slider-btn {
   display: none;
@@ -264,5 +271,10 @@ body {
   .hero-slider .slick-next {
     background-color: #f9f6e5;
     bottom: calc(50% - 56px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-slider-text {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

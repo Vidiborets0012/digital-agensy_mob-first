@@ -9,7 +9,7 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -123,14 +123,20 @@ body {
 .hero {
     background-image: url('../images/bg-hero.jpg');
     background-repeat: no-repeat;
-    background-position: -64px center;
+    background-position: center center;
     background-size: cover;
     min-height: 193px;
 }
 @media screen and (min-width: 640px) {
     .hero {
         min-height: 386px;
-        background-position: -162px center;
+        // background-position: -162px center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        min-height: 465px;
+        // background-position: -162px center;
     }
 }
 
@@ -163,6 +169,9 @@ body {
             background-color: $text-color;
             margin: 0 auto;
         }
+    }
+    &-text {
+        display: none;
     }
     &-btn {
         display: none;
@@ -239,5 +248,13 @@ body {
             bottom: calc(50% - 56px);
         }
         
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-slider {
+        &-text {
+            display: block;
+        }
     }
 }
