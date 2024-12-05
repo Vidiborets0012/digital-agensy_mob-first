@@ -317,3 +317,67 @@ body {
     }
 
 }
+
+.call {
+    background-color: $accent;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    &-title {
+        @extend %roboto-500;
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    &-text {
+        margin-bottom: 40px;
+
+    }
+    &-btn {
+        padding: 16px 15px;
+        text-transform: uppercase;
+        background-color: $bg-color;
+        border: none;
+        border-radius: 3px;
+        color: $accent;
+        @extend %roboto-500;
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .call {
+        text-align: left;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-box {
+            max-width: 427px;
+        }
+        &-text {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .call {
+        &-box {
+            max-width: 695px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .call {
+        &-inner {
+            padding: 0 80px;
+        }
+        &-box {
+            max-width: 796px;
+        }
+    }
+}
