@@ -9,9 +9,26 @@ html {
     box-sizing: inherit;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;list-style: none;
+}
+
+button {
+    padding: 0;
+}
+
 body {
     min-width: 320px;
     overflow-x: hidden;
+    font-family: 'Roboto-Regular', 'Arial', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .container {
@@ -99,4 +116,166 @@ body {
     .menu-btn {
         margin-right: 90px;
     }
+}
+
+// ********** HERO **********
+
+.hero {
+    background-image: url('../images/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 193px;
+}
+@media screen and (min-width: 640px) {
+    .hero {
+        min-height: 386px;
+        // background-position: -162px center;
+    }
+}
+// @media screen and (min-width: 768px) {
+//     .hero {
+//         min-height: 465px;
+//     }
+// }
+
+.hero-slider {
+    background: rgba(33, 33, 33, 0.5);
+    
+    &-item {
+        color: #fff;
+        text-align: center;
+        min-height: 193px;
+    }
+    &-title {
+        font-family: 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 28px;
+        text-transform: uppercase;
+        padding: 36px 0 28px;
+        margin: 0 auto;
+        max-width: 243px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 8px;
+            width: 61px;
+            background-color: $text-color;
+            margin: 0 auto;
+        }
+    }
+    &-text {
+        display: none;
+    }
+    &-btn {
+        display: none;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        .slick-active {
+            button {
+                background-color: transparent;
+                border: 1px solid #476e4d;
+            }
+        }
+        
+        button {
+            font-size: 0;
+            border: none;
+            padding: 0;
+            background-color: $accent;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+    }
+}
+@media screen and (min-width: 640px) {
+    .hero-slider {
+        &-item {
+            min-height: 465px;
+        }
+        &-title {
+            font-size: 60px;
+            line-height: 60px;
+            padding: 50px 0 15px;
+            margin: 0 auto 30px;
+            max-width: 520px;
+        }
+        &-btn {
+            display: block;
+            margin: 0 auto 113px;
+            border: none;
+            border-radius: 3px;
+            background-color: $accent;
+            font-family: 'Roboto';
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+            color: $bg-color;
+            text-transform: uppercase;
+            padding: 16px 45px;
+        }
+        .slick-dots {
+            bottom: 50px;
+        }
+        .slick-arrow {
+            width: 56px;
+            height: 56px;
+            border: none;
+            position: absolute;
+            right: 0;
+            z-index: 5;
+        }
+        .slick-prev {
+            background-color: $accent;
+            top: calc(50% - 56px);
+        }
+        .slick-next {
+            background-color: $bg-color;
+            bottom: calc(50% - 56px);
+        }
+        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-slider {
+        &-item {
+                min-height: 386px;
+            }
+        &-title {
+            max-width: 587px;
+            padding: 87px 0 0;
+            margin: 0 auto;
+            &::after {
+                display: none;
+            }
+        }
+        &-text {
+            display: block;
+            max-width: 587px;
+            padding: 25px 0 32px;
+            margin: 0 auto;
+            font-family: 'Roboto Condensed';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
 }
