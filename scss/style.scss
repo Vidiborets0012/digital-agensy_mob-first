@@ -277,5 +277,20 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+    .hero-slider {
+        &-item {
+            min-height: 618px;
+        }
+        &-title {
+            padding-top: 101px;
+            font-size: 84px;
+            line-height: 84px;
+            letter-spacing: 2px;
+            max-width: 750px;
+        }
+        .slick-dots {
+            bottom: 80px;
+        }
+    }
 
 }

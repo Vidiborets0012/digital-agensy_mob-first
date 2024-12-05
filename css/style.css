@@ -290,4 +290,19 @@ body {
     font-size: 18px;
     line-height: 19px;
   }
+}
+@media screen and (min-width: 1024px) {
+  .hero-slider-item {
+    min-height: 618px;
+  }
+  .hero-slider-title {
+    padding-top: 101px;
+    font-size: 84px;
+    line-height: 84px;
+    letter-spacing: 2px;
+    max-width: 750px;
+  }
+  .hero-slider .slick-dots {
+    bottom: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */
