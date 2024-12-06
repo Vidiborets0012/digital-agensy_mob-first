@@ -8,12 +8,18 @@ $defolt-color: #9b9b9b;
     font-weight: 300;
 }
 
+%roboto-500 {
+    font-family: 'Roboto-Medium';
+    font-weight: 500;
+}
+
 %robotocondensed-400 {
     font-family: 'RobotoCondensed-Regular';
     font-weight: 400;
 }
 
-%roboto-500 {
-    font-family: 'Roboto-Medium';
-    font-weight: 500;
+%robotocondensed-700 {
+    font-family: 'RobotoCondensed-Bold';
+    font-weight: 700;
 }
+

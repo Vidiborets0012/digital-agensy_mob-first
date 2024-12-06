@@ -3,6 +3,11 @@
   font-weight: 400;
 }
 
+.services-item-title {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
+}
+
 .call-btn, .call-title {
   font-family: "Roboto-Medium";
   font-weight: 500;
@@ -53,6 +58,11 @@
 .title {
   font-family: "RobotoCondensed-Regular";
   font-weight: 400;
+}
+
+.services-item-title {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
 }
 
 .call-btn, .call-title {
@@ -489,6 +499,7 @@ body {
 }
 .services-title {
   margin-bottom: 47px;
+  color: #2b4074;
 }
 .services-descr {
   font-size: 20px;
@@ -501,4 +512,31 @@ body {
   line-height: 17px;
   color: #797979;
   margin-bottom: 40px;
+}
+.services-item {
+  min-height: 310px;
+  border: 1px solid #f9f6e5;
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services-item:last-child {
+  border-bottom: 1px solid #f9f6e5;
+}
+.services-item-img {
+  margin-bottom: 30px;
+}
+.services-item-title {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+.services-item-text {
+  display: none;
+}
+.services-item-link {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
