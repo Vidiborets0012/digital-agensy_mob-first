@@ -1,16 +1,21 @@
-.title {
-  font-family: "RobotoCondensed-Regular";
+.services-item-text {
+  font-family: "Dosis-Regular";
   font-weight: 400;
-}
-
-.services-item-title {
-  font-family: "RobotoCondensed-Bold";
-  font-weight: 700;
 }
 
 .call-btn, .call-title {
   font-family: "Roboto-Medium";
   font-weight: 500;
+}
+
+.title {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+}
+
+.services-item-link, .services-item-title {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
 }
 
 @font-face {
@@ -55,19 +60,24 @@
   font-style: normal;
   src: url("../fonts/Dosis-Medium.woff2") format("woff2"), url("../fonts/Dosis-Medium.woff") format("woff");
 }
-.title {
-  font-family: "RobotoCondensed-Regular";
+.services-item-text {
+  font-family: "Dosis-Regular";
   font-weight: 400;
-}
-
-.services-item-title {
-  font-family: "RobotoCondensed-Bold";
-  font-weight: 700;
 }
 
 .call-btn, .call-title {
   font-family: "Roboto-Medium";
   font-weight: 500;
+}
+
+.title {
+  font-family: "RobotoCondensed-Regular";
+  font-weight: 400;
+}
+
+.services-item-link, .services-item-title {
+  font-family: "RobotoCondensed-Bold";
+  font-weight: 700;
 }
 
 @font-face {
@@ -517,12 +527,29 @@ body {
   min-height: 310px;
   border: 1px solid #f9f6e5;
   border-bottom: none;
+  padding: 0 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .services-item:last-child {
   border-bottom: 1px solid #f9f6e5;
+}
+.services-item:hover .services-item-text,
+.services-item:hover .services-item-link {
+  display: block;
+}
+.services-item:hover .services-item-img {
+  margin-bottom: 14px;
+}
+.services-item:hover .services-item-title {
+  margin-bottom: 30px;
+}
+.services-item:hover .services-item-inner {
+  border: 4px solid #2b4074;
+  margin: 18px 0;
+  padding: 25px 20px 5px;
+  min-height: 277px;
 }
 .services-item-img {
   margin-bottom: 30px;
@@ -536,7 +563,11 @@ body {
 }
 .services-item-text {
   display: none;
+  margin-bottom: 17px;
 }
 .services-item-link {
   display: none;
+  letter-spacing: 2px;
+  color: #2b4074;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
