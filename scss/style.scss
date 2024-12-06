@@ -414,3 +414,54 @@
         @extend %robotocondensed-700;
     }
 }
+
+@media screen and (min-width: 640px) {
+    .services {
+        padding: 24px 0 0;
+        &-title {
+            margin-bottom: 20px;
+            padding-bottom: 0;
+            &::after {
+                display: none;
+            }
+        }
+
+        &-descr {
+            font-size: 24px;
+            padding-bottom: 38px;
+            margin-bottom: 31px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 8px;
+                background-color: $accent;
+                bottom: 0;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+            }
+        }
+
+        &-text {
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &-items {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -30px;
+        }
+        &-item {
+            min-height: 310px;
+            width: 50%;
+            &:nth-child(even) {
+                border-left: none;
+            }
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
