@@ -454,13 +454,45 @@
             margin: 0 -30px;
         }
         &-item {
-            min-height: 310px;
             width: 50%;
             &:nth-child(even) {
                 border-left: none;
             }
             &:last-child {
                 border-bottom: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .services {
+        padding: 50px 0 0;
+        &-title {
+            margin-bottom: 30px;
+        }
+        &-descr {
+            text-align: left;
+            &::after {
+                margin-left: 0;
+            }
+        }
+        &-text {
+            text-align: left;
+            margin-bottom: 27px;
+        }
+        &-items {
+            margin: 0 -40px;
+        }
+        &-item {
+            padding: 0 65px;
+            min-height: 334px;
+            &:hover {
+                .services-item-inner {
+                    margin: 18px 0;
+                    padding: 35px 60px 5px;
+                    min-height: 288px;
+                }
             }
         }
     }
