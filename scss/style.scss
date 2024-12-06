@@ -489,9 +489,43 @@
             min-height: 334px;
             &:hover {
                 .services-item-inner {
-                    margin: 18px 0;
                     padding: 35px 60px 5px;
                     min-height: 288px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .services {
+        padding: 52px 0 0;
+
+        &-title {
+            margin-bottom: 60px;
+        }
+
+        &-descr {
+            padding-bottom: 46px;
+            margin-bottom: 40px;
+        }
+        &-text {
+            max-width: 608px;
+            margin-bottom: 32px;
+        }
+        &-item {
+            width: 25%;
+            padding: 0 17px;
+            min-height: 277px;
+            &:nth-child(2),
+            &:nth-child(6) {
+                border-right: none;
+            }
+            &:hover {
+                .services-item-inner {
+                    margin: 10px 0;
+                    padding: 21px 9px 5px;
+                    min-height: 255px;
                 }
             }
         }
