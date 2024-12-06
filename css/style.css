@@ -543,7 +543,9 @@ body {
 }
 .services-item:hover .services-item-text,
 .services-item:hover .services-item-link {
-  display: block;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
 }
 .services-item:hover .services-item-img {
   margin-bottom: 14px;
@@ -557,6 +559,9 @@ body {
   padding: 25px 20px 5px;
   min-height: 277px;
 }
+.services-item-inner {
+  transition: all 0.5s;
+}
 .services-item-img {
   margin-bottom: 30px;
 }
@@ -567,12 +572,16 @@ body {
   color: #4a4a4a;
   text-transform: uppercase;
 }
+.services-item-text, .services-item-link {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
 .services-item-text {
-  display: none;
   margin-bottom: 17px;
 }
 .services-item-link {
-  display: none;
   letter-spacing: 2px;
   color: #2b4074;
   text-transform: uppercase;
@@ -680,6 +689,43 @@ body {
   .services-item:hover .services-item-inner {
     margin: 10px 0;
     padding: 21px 9px 5px;
+    min-height: 255px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .services {
+    padding: 0;
+  }
+  .services-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .services-head {
+    max-width: 350px;
+    margin-right: 100px;
+  }
+  .services-title {
+    text-align: left;
+    margin: 90px 0 70px;
+  }
+  .services-descr {
+    padding-bottom: 38px;
+    margin-bottom: 35px;
+  }
+  .services-items {
+    margin: 0 -101px 0 0;
+  }
+  .services-item {
+    width: 230px;
+    padding: 0 5px;
+    height: 273px;
+  }
+  .services-item:hover {
+    padding: 0 5px;
+  }
+  .services-item:hover .services-item-inner {
+    margin: 5px 0;
+    padding: 10px 3px 5px;
     min-height: 255px;
   }
 }/*# sourceMappingURL=style.css.map */
