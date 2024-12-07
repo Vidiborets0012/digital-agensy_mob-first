@@ -773,4 +773,35 @@ body {
   .team-btn {
     font-style: 20px;
   }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding: 40px 0 48px;
+    text-align: left;
+  }
+  .team-inner {
+    display: flex;
+  }
+  .team-images {
+    width: 240px;
+    height: 100%;
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+  .team-title {
+    font-size: 36px;
+    line-height: 38px;
+    padding-bottom: 28px;
+    margin-bottom: 7px;
+  }
+  .team-title::after {
+    margin-left: 0;
+  }
+  .team-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .team-btn {
+    font-style: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */
