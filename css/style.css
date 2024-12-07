@@ -728,4 +728,27 @@ body {
     padding: 10px 3px 5px;
     min-height: 255px;
   }
+}
+.team {
+  padding: 20px 0 40px;
+  text-align: center;
+}
+.team-images {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.team-title {
+  color: #4a4a4a;
+  margin-bottom: 23px;
+}
+.team-text {
+  margin-bottom: 84px;
+}
+.team-btn {
+  border: none;
+  background-color: #2b4074;
+  color: #f9f6e5;
+  text-transform: uppercase;
+  padding: 21px 26px;
+  border-radius: 3px;
 }/*# sourceMappingURL=style.css.map */

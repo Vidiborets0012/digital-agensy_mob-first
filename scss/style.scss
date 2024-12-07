@@ -579,3 +579,27 @@
         }
     }
 }
+
+.team {
+    padding: 20px 0 40px;
+    text-align: center;
+    &-images {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    &-title {
+        color: $text-color;
+        margin-bottom: 23px;
+    }
+    &-text {
+        margin-bottom: 84px;
+    }
+    &-btn {
+        border: none;
+        background-color: $accent;
+        color: $bg-color;
+        text-transform: uppercase;
+        padding: 21px 26px;
+        border-radius: 3px;
+    }
+}
