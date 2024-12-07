@@ -677,3 +677,24 @@
         }
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .team {
+        padding: 50px 0 110px;
+
+        &-images {
+            width: 460px;
+            margin-right: 100px;
+        }
+
+        &-title {
+            margin-top: 0;
+            margin-bottom: 39px;
+        }
+
+        &-text {
+            width: 553px;
+            margin-bottom: 39px;
+        }
+    }
+}

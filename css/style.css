@@ -822,4 +822,21 @@ body {
     line-height: 24px;
     margin-bottom: 12px;
   }
+}
+@media screen and (min-width: 1440px) {
+  .team {
+    padding: 50px 0 110px;
+  }
+  .team-images {
+    width: 460px;
+    margin-right: 100px;
+  }
+  .team-title {
+    margin-top: 0;
+    margin-bottom: 39px;
+  }
+  .team-text {
+    width: 553px;
+    margin-bottom: 39px;
+  }
 }/*# sourceMappingURL=style.css.map */
