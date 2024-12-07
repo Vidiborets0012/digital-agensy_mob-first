@@ -13,7 +13,7 @@
   font-weight: 400;
 }
 
-.services-item-link, .services-item-title {
+.project-item-link, .services-item-link, .services-item-title {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
@@ -75,7 +75,7 @@
   font-weight: 400;
 }
 
-.services-item-link, .services-item-title {
+.project-item-link, .services-item-link, .services-item-title {
   font-family: "RobotoCondensed-Bold";
   font-weight: 700;
 }
@@ -727,5 +727,91 @@ body {
     margin: 5px 0;
     padding: 10px 3px 5px;
     min-height: 255px;
+  }
+}
+.project {
+  padding: 20px 0 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #2b4074 0%, rgba(255, 255, 255, 0) 100%);
+}
+.project-title {
+  color: #fff;
+  margin-bottom: 40px;
+}
+.project-title::after {
+  background-color: #fff;
+}
+.project-item-img {
+  min-height: 250px;
+  width: 280px;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 12px 14px;
+}
+.project-item-img:hover .project-item-inner {
+  opacity: 1;
+}
+.project-item-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: rgba(249, 246, 229, 0.834888);
+  min-height: 228px;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.project-item-info, .project-item-search {
+  margin: 0 7px;
+}
+.project-item-link {
+  display: block;
+  padding: 20px 0;
+  letter-spacing: 2px;
+  line-height: 19px;
+  color: #2b4074;
+}
+
+@media screen and (min-width: 640px) {
+  .project {
+    padding: 40px 0 20px;
+  }
+  .project-item-img {
+    min-height: 460px;
+    width: 518px;
+    padding: 21px 24px;
+  }
+  .project-item-inner {
+    min-height: 418px;
+  }
+  .project-item-link {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project {
+    padding: 80px 0 60px;
+  }
+  .project-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .project-item-img {
+    min-height: 283px;
+    width: 317px;
+    padding: 12px 14px;
+  }
+  .project-item-inner {
+    min-height: 256px;
+  }
+  .project-item-link {
+    padding: 30px 0;
+    font-size: 20px;
+    line-height: 23px;
   }
 }/*# sourceMappingURL=style.css.map */
