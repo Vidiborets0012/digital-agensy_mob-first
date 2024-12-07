@@ -581,7 +581,7 @@
 }
 
 .project {
-    padding: 20px 0 40px;
+    padding: 20px 0 20px;
     text-align: center;
     background: linear-gradient(180deg, #2b4074 0%, rgba(255, 255, 255, 0) 100%);
     &-title {
@@ -597,6 +597,8 @@
         margin: 0 auto;
         border-radius: 4px;
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         padding: 12px 14px;
         &:hover {
             .project-item-inner {
@@ -626,5 +628,23 @@
         letter-spacing: 2px;
         line-height: 19px;
         color: $accent;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .project {
+        padding: 40px 0 20px;
+        &-item-img {
+            min-height: 460px;
+            width: 518px;
+            padding: 21px 24px;   
+        }
+        &-item-inner {
+            min-height: 418px;
+        }        
+        &-item-link {
+            font-size: 20px;
+            line-height: 23px;
+        }
     }
 }
