@@ -1143,9 +1143,29 @@
             margin: 0 5px;
         }
     }
+}
 
-    // .slick-dots .slick-active button {
-    //     background-color: transparent;
-    //     border: 1px solid #476e4d;
-    // }
+@media screen and (min-width: 640px) {
+    .quotes-slider {
+        max-width: 640px;
+        padding-left: 53px;
+        padding-right: 35px;
+
+        .quotes-item {
+            max-width: 552px;
+        }
+
+        .quote {
+            font-size: 32px;
+            line-height: 1.0633;
+
+            &-text-inner {
+                min-height: 138px;
+            }
+
+            &-item-text {
+                margin-bottom: 40px;
+            }
+        }
+    }
 }
