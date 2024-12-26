@@ -8,7 +8,7 @@
   font-weight: 500;
 }
 
-.quotes-slider .quote, .title {
+.footer-back-to-top-inner .back-to-top, .quotes-slider .quote, .title {
   font-family: "RobotoCondensed-Regular";
   font-weight: 400;
 }
@@ -70,7 +70,7 @@
   font-weight: 500;
 }
 
-.quotes-slider .quote, .title {
+.footer-back-to-top-inner .back-to-top, .quotes-slider .quote, .title {
   font-family: "RobotoCondensed-Regular";
   font-weight: 400;
 }
@@ -124,6 +124,7 @@
 }
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -1354,11 +1355,88 @@ body {
   justify-content: center;
   align-items: center;
   gap: 21px;
-  font-family: "Roboto Condensed", sans-serif;
   letter-spacing: 0.12em;
   line-height: 24px;
   text-align: center;
   color: #4a4a4a;
   text-transform: uppercase;
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 640px) {
+  .footer {
+    margin-top: 90px;
+  }
+  .footer-inner {
+    max-width: 636px;
+  }
+  .footer-text {
+    width: 547px;
+    font-size: 24px;
+    line-height: 1.08333;
+    letter-spacing: 0.08em;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .footer-social {
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #7ebf84;
+    border-bottom: 1px solid #7ebf84;
+  }
+  .footer-social-item {
+    min-height: 57px;
+    border-right: 1px solid #7ebf84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-social-item:nth-child(1) {
+    width: 143px;
+  }
+  .footer-social-item:nth-child(2) {
+    width: 142px;
+  }
+  .footer-social-item:nth-child(3) {
+    width: 132px;
+  }
+  .footer-social-item:nth-child(4) {
+    width: 153px;
+    border-right: none;
+  }
+  .footer-social-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 157px;
+         column-gap: 157px;
+    row-gap: 28px;
+    text-align: left;
+    padding-bottom: 0;
+  }
+  .footer-bottom-title {
+    margin-bottom: 22px;
+  }
+  .footer-contacts, .footer-address, .footer-help, .footer-menu {
+    width: 194px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 640px) {
+  .footer-back-to-top-inner {
+    max-width: 640px;
+    padding: 7px 14px 5px;
+  }
+  .footer-back-to-top-inner .back-to-top {
+    max-width: 143px;
+    margin: 0 0 0 auto;
+    padding: 6px 0 6px 44px;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 23px;
+  }
 }/*# sourceMappingURL=style.css.map */
