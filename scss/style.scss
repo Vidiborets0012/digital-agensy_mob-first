@@ -1169,3 +1169,15 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .quotes-slider {
+        max-width: 770px;
+        padding-left: 41px;
+        padding-right: 42px;
+
+        .quotes-item {
+            max-width: 687px;
+        }
+    }
+}

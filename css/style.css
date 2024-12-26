@@ -1222,4 +1222,14 @@ body {
   .quotes-slider .quote-item-text {
     margin-bottom: 40px;
   }
+}
+@media screen and (min-width: 768px) {
+  .quotes-slider {
+    max-width: 770px;
+    padding-left: 41px;
+    padding-right: 42px;
+  }
+  .quotes-slider .quotes-item {
+    max-width: 687px;
+  }
 }/*# sourceMappingURL=style.css.map */
