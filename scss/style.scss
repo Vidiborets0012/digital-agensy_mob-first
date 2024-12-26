@@ -1426,3 +1426,57 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .footer {
+        margin-top: 85px;
+
+        &-inner {
+            max-width: 770px;
+            padding-bottom: 56px;
+        }
+
+        &-logo {
+            margin-bottom: 85px;
+        }
+
+        &-text {
+            width: 690px;
+            font-size: 36px;
+            line-height: 0.88889;
+            letter-spacing: 0.06em;
+        }
+
+        &-social {
+            width: 690px;
+
+            &-item {
+                min-height: 70px;
+
+                &:nth-child(1) {
+                    width: 173px;
+                }
+
+                &:nth-child(2) {
+                    width: 176px;
+                }
+
+                &:nth-child(3) {
+                    width: 162px;
+                }
+
+                &:nth-child(4) {
+                    width: 177px;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .footer-back-to-top-inner {
+        max-width: 770px;
+    }
+}
