@@ -1052,4 +1052,48 @@ body {
   .news-title {
     margin-bottom: 50px;
   }
+}
+@media screen and (min-width: 1024px) {
+  .news {
+    padding-bottom: 80px;
+  }
+  .news-title {
+    padding-top: 65px;
+    margin-bottom: 96px;
+  }
+  .news-items {
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 343px 13px 28px 96px 83px 45px 100px 118px;
+  }
+  .news-item-1 {
+    grid-row: 1/4;
+  }
+  .news-item-2 {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  .news-item-3 {
+    grid-column: 3/4;
+    grid-row: -9/-7;
+  }
+  .news-item-4 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+  }
+  .news-item-5 {
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+  .news-item-6 {
+    grid-column: 3/4;
+    grid-row: -7/-3;
+  }
+  .news-item-7 {
+    grid-column: 1/2;
+    grid-row: 6/8;
+  }
+  .news-item-8 {
+    grid-column: 2/3;
+    grid-row: 5/9;
+  }
 }/*# sourceMappingURL=style.css.map */
