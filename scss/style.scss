@@ -1205,3 +1205,24 @@
         margin-bottom: 45px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .quotes-slider {
+        max-width: 1443px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .quotes-item {
+            max-width: 1443px;
+            padding-top: 144px;
+        }
+    }
+
+    .quote-text-inner {
+        min-height: 108px;
+    }
+
+    .quote-item-text {
+        margin-bottom: 30px;
+    }
+}
