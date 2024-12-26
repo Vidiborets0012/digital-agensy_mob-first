@@ -8,7 +8,7 @@
   font-weight: 500;
 }
 
-.title {
+.quotes-slider .quote, .title {
   font-family: "RobotoCondensed-Regular";
   font-weight: 400;
 }
@@ -70,7 +70,7 @@
   font-weight: 500;
 }
 
-.title {
+.quotes-slider .quote, .title {
   font-family: "RobotoCondensed-Regular";
   font-weight: 400;
 }
@@ -1138,4 +1138,67 @@ body {
     grid-column: 4/5;
     grid-row: 2/7;
   }
+}
+.quotes-slider {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+.quotes-slider .quotes-item {
+  padding-top: 114px;
+  padding-bottom: 50px;
+  max-width: 275px;
+  background-image: url(../images/quote.png);
+  background-repeat: no-repeat;
+  background-size: 32px 26px;
+  background-position: top 53px center;
+}
+.quotes-slider .quote {
+  font-size: 24px;
+  line-height: 1.08333;
+  color: #4a4a4a;
+  text-align: center;
+  margin: 0;
+}
+.quotes-slider .quote-text-inner {
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.quotes-slider .quote-item-text {
+  margin-bottom: 20px;
+}
+.quotes-slider .quote-text-accent {
+  font-weight: 700;
+  color: #2b4074;
+}
+.quotes-slider .quote-footer {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+.quotes-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+.quotes-slider .slick-dots .slick-active button {
+  background-color: transparent;
+  border: 1px solid #476e4d;
+}
+.quotes-slider .slick-dots button {
+  font-size: 0;
+  border: none;
+  padding: 0;
+  background-color: #2b4074;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
 }/*# sourceMappingURL=style.css.map */
