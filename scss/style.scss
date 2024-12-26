@@ -1549,3 +1549,69 @@
         max-width: 1024px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        margin-top: 120px;
+
+        &-inner {
+            max-width: 1440px;
+            padding-bottom: 80px;
+        }
+
+        &-text {
+            width: 751px;
+            margin-bottom: 80px;
+            margin-left: 48px;
+            margin-right: auto;
+        }
+
+        &-social {
+            width: 1140px;
+
+            &-item {
+                min-height: 63px;
+
+                &:nth-child(1) {
+                    width: 284px;
+                }
+
+                &:nth-child(2) {
+                    width: 285px;
+                }
+
+                &:nth-child(3) {
+                    width: 285px;
+                }
+
+                &:nth-child(4) {
+                    width: 287px;
+                }
+            }
+        }
+
+        &-bottom {
+            width: 1096px;
+        }
+
+        &-contacts {
+            margin-right: 66px;
+        }
+
+        &-address {
+            margin-right: 92px;
+        }
+
+        &-help {
+            margin-right: 92px;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .footer-back-to-top-inner {
+        max-width: 1440px;
+    }
+}
